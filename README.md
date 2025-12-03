@@ -1,31 +1,30 @@
 # Web Admin KajjaFisio
 
-Aplikasi **Web Admin KajjaFisio** adalah platform admin sederhana yang digunakan untuk mengelola data pada sistem KajjaFisio. Website ini dibangun menggunakan teknologi frontend dasar seperti **HTML, CSS, dan JavaScript**, sehingga ringan, cepat, dan mudah dikembangkan.
+**Web Admin KajjaFisio** is a simple admin panel designed to help manage data within the KajjaFisio system. The website is built using HTML, CSS, and JavaScript, making it lightweight, fast, and easy to extend.
 
 ---
 
-## 🚀 Fitur Utama
+## 🚀 Key Features
 
-- **Dashboard Admin** sederhana dan responsif  
-- Manajemen data melalui tampilan web
-- Navigasi dan tampilan UI yang mudah digunakan
-- Struktur kode yang rapi dan mudah dikembangkan
+- Responsive admin dashboard  
+- Simple and user-friendly navigation  
+- Clean and scalable project structure  
+- Lightweight performance without any framework  
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (Vanilla)**
+- **Vanilla JavaScript**
 
 ---
 
-## 📁 Struktur Project
+## 📁 Project Structure
 
-```text
 web-admin-kajjafisio/
 │
-├── index.html      # Halaman utama
-├── styles.css      # Styling UI
-└── app.js          # Script utama
+├── index.html      # Main page
+├── styles.css      # UI styling
+└── app.js          # Main script
