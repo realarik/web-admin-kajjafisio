@@ -23,7 +23,6 @@
 
 ## 📁 Project Structure
 
-```text
 web-admin-kajjafisio/
 │
 ├── index.html      # Main page
