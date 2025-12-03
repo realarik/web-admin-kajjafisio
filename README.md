@@ -25,9 +25,9 @@
 
 web-admin-kajjafisio/
 │
-├── index.html      # Main page
-├── styles.css      # UI styling
-└── app.js          # Main script
+├── index.html # Main page
+├── styles.css # UI styling
+└── app.js # Main script
 
 
 ---
