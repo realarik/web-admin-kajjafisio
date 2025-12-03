@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kajja Fisio - Laporan Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <h1>Kajja Fisio - Laporan Order</h1>
+        <p>Ringkasan pendapatan dan daftar order pasien</p>
+      </div>
+
+      <div class="price-wrapper">
+        <label for="price-per-session">Harga per sesi</label>
+        <div class="price-input">
+          <input
+            type="number"
+            id="price-per-session"
+            min="0"
+            value="200000"
+          />
+          <span class="currency">IDR</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- Filter area -->
+    <section class="filters">
+      <div class="filter-group">
+        <label for="search-input">Cari nama, alamat, telp...</label>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Ketik untuk mencari"
+        />
+      </div>
+
+      <div class="filter-group">
+        <label for="package-filter">Filter paket</label>
+        <select id="package-filter">
+          <option value="all">Semua paket</option>
+          <option value="Paket 1 (1x sesi)">Paket 1 (1x sesi)</option>
+          <option value="Paket 3 (3x sesi)">Paket 3 (3x sesi)</option>
+          <option value="Paket 6 (6x sesi)">Paket 6 (6x sesi)</option>
+          <option value="Paket 10 (10x sesi)">Paket 10 (10x sesi)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Summary cards -->
+    <section class="summary">
+      <div class="card">
+        <p class="card-label">Total Order</p>
+        <h2 id="total-orders">0</h2>
+      </div>
+      <div class="card">
+        <p class="card-label">Total Sesi</p>
+        <h2 id="total-sessions">0</h2>
+      </div>
+      <div class="card highlight">
+        <p class="card-label">Total Pendapatan</p>
+        <h2 id="total-revenue">Rp 0</h2>
+      </div>
+    </section>
+
+    <!-- Orders table -->
+    <section class="panel">
+      <div class="panel-header">
+        <h3>Daftar Order Pasien</h3>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nama</th>
+              <th>Umur</th>
+              <th>Jenis Kelamin</th>
+              <th>Alamat</th>
+              <th>Telp</th>
+              <th>Paket</th>
+              <th>Sesi</th>
+              <th>Jumlah (IDR)</th>
+            </tr>
+          </thead>
+          <tbody id="orders-body">
+            <!-- diisi oleh JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Per package summary -->
+    <section class="panel">
+      <div class="panel-header">
+        <h3>Rincian Per Paket</h3>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Paket</th>
+              <th>Jumlah Order</th>
+              <th>Total Sesi</th>
+              <th>Pendapatan</th>
+            </tr>
+          </thead>
+          <tbody id="packages-body">
+            <!-- diisi oleh JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
